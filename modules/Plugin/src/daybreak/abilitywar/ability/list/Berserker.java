@@ -15,16 +15,16 @@ import daybreak.abilitywar.utils.library.SoundLib;
 import org.bukkit.Material;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
-@AbilityManifest(name = "버서커", rank = Rank.B, species = Species.HUMAN, explain = {
-		"철괴를 우클릭한 후 5초 안에 하는 다음 근접 공격이 강화됩니다. $[CooldownConfig]",
-		"강화된 공격은 $[StrengthConfig]배의 대미지를 내며, 강화된 공격을 사용한 후",
-		"$[DebuffConfig]초간 대미지를 입힐 수 없습니다.",
-		"지속시간 내에 공격하지 못한 경우, 쿨타임을 절반만 갖습니다."
+@AbilityManifest(name = "Berserker", rank = Rank.B, species = Species.HUMAN, explain = {
+		"Empower for 5 seconds after right-clicking iron ingot. $[CooldownConfig]",
+		"Empowered attacks will do $[StrengthConfig]times of normal damage, after attacking",
+		"you cannot do for $[DebuffConfig]seconds.",
+		"Cooldown is reduced by half if you did not attack when activated."
 })
 public class Berserker extends AbilityBase implements ActiveHandler {
 
 	public static final SettingObject<Integer> CooldownConfig = new SettingObject<Integer>(Berserker.class, "Cooldown", 80,
-			"# 쿨타임") {
+			"# Cooldown") {
 
 		@Override
 		public boolean Condition(Integer value) {
@@ -39,7 +39,7 @@ public class Berserker extends AbilityBase implements ActiveHandler {
 	};
 
 	public static final SettingObject<Double> StrengthConfig = new SettingObject<Double>(Berserker.class, "Strength", 2.5,
-			"# 공격 강화 배수") {
+			"# Increased damage") {
 
 		@Override
 		public boolean Condition(Double value) {
