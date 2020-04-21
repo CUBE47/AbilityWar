@@ -18,10 +18,10 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
 import java.util.Random;
 
-@AbilityManifest(name = "다이스 갓", rank = Rank.A, species = Species.GOD, explain = {
-		"철괴를 우클릭하면 §c재생 §f/ §b신속 §f/ §6힘 §f/ §3저항 §f/ §8구속 §f/ §7나약함 §f효과 중 하나를",
-		"10초간 받습니다. $[CooldownConfig]",
-		"공격을 받았을 때 1/6 확률로 대미지를 받는 대신 대미지만큼 체력을 회복합니다."
+@AbilityManifest(name = "Gambler", rank = Rank.A, species = Species.GOD, explain = {
+		"Gets an effect §cRegeneration §f/ §bSwiftness §f/ §6Power §f/ §3Resistance §f/ §8Slowness §f/ §7Weakness §f",
+		"for ten seconds when right-click iron ingot. $[CooldownConfig]",
+		"When attacted,heals the player in chance of 1/6 ."
 })
 public class DiceGod extends AbilityBase implements ActiveHandler {
 
