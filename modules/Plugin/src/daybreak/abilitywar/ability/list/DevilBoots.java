@@ -18,8 +18,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 
 import java.util.LinkedList;
 
-@AbilityManifest(name = "악마의 부츠", rank = Rank.B, species = Species.OTHERS, explain = {
-		"신속하게 이동하며 지나가는 모든 곳에 불이 붙습니다. 화염 피해를 받지 않습니다."
+@AbilityManifest(name = "Devil's Boots", rank = Rank.B, species = Species.OTHERS, explain = {
+		"Moves swiftly,causing flame on the spot where player was.Player is immune to fire."
 })
 public class DevilBoots extends AbilityBase {
 
