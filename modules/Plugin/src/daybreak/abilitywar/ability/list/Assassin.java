@@ -17,9 +17,9 @@ import org.bukkit.entity.Damageable;
 
 import java.util.LinkedList;
 
-@AbilityManifest(name = "암살자", rank = Rank.A, species = Species.HUMAN, explain = {
-		"철괴를 우클릭하면 $[DistanceConfig]칸 이내에 있는 생명체 $[TeleportCountConfig]명(마리)에게 이동하며",
-		"각각 $[DamageConfig]의 대미지를 줍니다. $[CooldownConfig]"
+@AbilityManifest(name = "Assassin", rank = Rank.A, species = Species.HUMAN, explain = {
+		"Right-click iron ingot will teleport to $[TeleportCountConfig]entities within $[DistanceConfig]blocks",
+		"each damaging $[DamageConfig]. $[CooldownConfig]"
 })
 public class Assassin extends AbilityBase implements ActiveHandler {
 
@@ -107,7 +107,7 @@ public class Assassin extends AbilityBase implements ActiveHandler {
 				cooldownTimer.start();
 				return true;
 			} else {
-				getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', "&f" + distance + "칸 이내에 &a엔티티&f가 존재하지 않습니다."));
+				getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', "&f" + distance + "No &aPlayers&f are found."));
 			}
 		}
 
