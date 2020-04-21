@@ -23,10 +23,10 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-@AbilityManifest(name = "아레스", rank = Rank.A, species = Species.GOD, explain = {
-		"전쟁의 신 아레스.",
-		"철괴를 우클릭하면 앞으로 돌진하며 주위의 엔티티에게 대미지를 주며,",
-		"대미지를 받은 엔티티들을 밀쳐냅니다. $[CooldownConfig]"
+@AbilityManifest(name = "Ares", rank = Rank.A, species = Species.GOD, explain = {
+		"God of War,Ares.",
+		"Right-click iron ingot will dash in front to give damage to nearby entities,",
+		"and pushing all damaged entities. $[CooldownConfig]"
 })
 public class Ares extends AbilityBase implements ActiveHandler {
 
@@ -55,7 +55,7 @@ public class Ares extends AbilityBase implements ActiveHandler {
 
 	};
 
-	public static final SettingObject<Boolean> DashConfig = new SettingObject<Boolean>(Ares.class, "DashIntoTheAir", false,
+	public static final SettingObject<Boolean> DashConfig = new SettingObject<Boolean>(Ares.class, "DashIntoTheAir", true,
 			"# true로 설정하면 아레스 능력 사용 시 공중으로 돌진 할 수 있습니다.") {
 
 		@Override
