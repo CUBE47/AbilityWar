@@ -19,10 +19,10 @@ import org.bukkit.entity.Arrow;
 import org.bukkit.event.entity.EntityShootBowEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
 
-@AbilityManifest(name = "폭발화살", rank = Rank.S, species = Species.HUMAN, explain = {
-		"$[StackPeriodConfig]초마다 스택을 1만큼 얻습니다. 스택은 최대 $[MaxStackConfig]만큼 중첩됩니다.",
-		"활을 쏘면 스택을 1만큼 소모하여 폭발 화살을 쏩니다.",
-		"스택이 없으면 활을 쏠 수 없습니다."
+@AbilityManifest(name = "Exploding arrow", rank = Rank.S, species = Species.HUMAN, explain = {
+		"Gain a stack per $[StackPeriodConfig]second. Stacks are gained up to $[MaxStackConfig].",
+		"Use 1 stack to shoot exploding arrow when use a bow.",
+		"Cannot use bow when there are no stacks."
 })
 public class BombArrow extends AbilityBase {
 
