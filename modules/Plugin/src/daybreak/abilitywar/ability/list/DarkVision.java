@@ -12,9 +12,9 @@ import daybreak.abilitywar.utils.base.math.LocationUtil;
 import daybreak.abilitywar.utils.library.PotionEffects;
 import org.bukkit.entity.LivingEntity;
 
-@AbilityManifest(name = "심안", rank = Rank.B, species = Species.HUMAN, explain = {
-		"앞이 보이지 않는 대신, 플레이어의 $[DistanceConfig]칸 안에 있는 모든 생명체는",
-		"발광 효과가 적용됩니다. 또한, 빠르게 달리고 높게 점프할 수 있습니다."
+@AbilityManifest(name = "Dark Vision", rank = Rank.B, species = Species.HUMAN, explain = {
+		"Blinded, but gives glowing effect to all entities within $[DistanceConfig]blocks.",
+		"Increase in movement speed and jump."
 })
 public class DarkVision extends AbilityBase {
 
