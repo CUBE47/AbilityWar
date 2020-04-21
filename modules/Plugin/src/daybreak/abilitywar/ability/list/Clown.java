@@ -15,10 +15,10 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
-@AbilityManifest(name = "광대", rank = Rank.B, species = Species.HUMAN, explain = {
-		"철괴를 우클릭하면 스폰으로 이동합니다. $[CooldownConfig]",
-		"스폰으로 이동한 후 10초 안에 철괴를 다시 우클릭하면 원래 위치로 돌아가",
-		"주변 $[RangeConfig]칸 이내의 플레이어들을 실명시킵니다."
+@AbilityManifest(name = "Clown", rank = Rank.B, species = Species.HUMAN, explain = {
+		"Teleport to spawn when right-click iron ingot. $[CooldownConfig]",
+		"When re-casted,it teleports back to where the clown was,",
+		"blinding all entities within $[RangeConfig]blocks."
 })
 public class Clown extends AbilityBase implements ActiveHandler {
 
