@@ -30,11 +30,11 @@ import org.bukkit.inventory.EntityEquipment;
 
 import java.util.function.Predicate;
 
-@AbilityManifest(name = "컬스", rank = Rank.A, species = Species.OTHERS, explain = {
-		"주위 15칸 안에 있는 상대를 원거리에서 타겟팅해 $[DurationConfig]초간 지속되는",
-		"저주 인형을 내 위치에 만들어내며, 저주 인형이 대미지를 입을 경우",
-		"대미지의 일부가 상대에게 전이됩니다. $[CooldownConfig]",
-		"대상의 체력이 적을 수록 더욱 큰 대미지를 입힐 수 있습니다."
+@AbilityManifest(name = "Curse", rank = Rank.A, species = Species.OTHERS, explain = {
+		"Target a random enemy to summon a cursed doll which stays for $[DurationConfig]seconds",
+		"When the doll is damaged",
+		"Part of the damage goes to the targeted enemy. $[CooldownConfig]",
+		"Damage increases as enemy is low in health."
 })
 public class Curse extends AbilityBase implements ActiveHandler {
 
