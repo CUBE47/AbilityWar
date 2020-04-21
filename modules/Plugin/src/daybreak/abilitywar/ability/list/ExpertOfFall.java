@@ -18,10 +18,9 @@ import org.bukkit.entity.Damageable;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 
-@AbilityManifest(name = "낙법의 달인", rank = Rank.B, species = Species.HUMAN, explain = {
-		"수십년간의 고된 수련으로 낙법과 하나가 된 낙법의 달인.",
-		"낙하해 땅에 닿았을 때 자동으로 물낙법을 하며,",
-		"낙하 거리에 비례해 주변 3칸 내의 생명체들에게 대미지를 줍니다."
+@AbilityManifest(name = "Master of Fall", rank = Rank.B, species = Species.HUMAN, explain = {
+		"Automatically summons water when falling down,",
+		"gives damage to all entities within 3 blocks based on the height."
 })
 public class ExpertOfFall extends AbilityBase {
 
