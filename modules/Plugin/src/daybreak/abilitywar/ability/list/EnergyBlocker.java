@@ -17,11 +17,11 @@ import org.bukkit.Material;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 
-@AbilityManifest(name = "에너지 블로커", rank = Rank.A, species = Species.HUMAN, explain = {
-		"원거리 공격 피해를 1/3로, 근거리 공격 피해를 두 배로 받거나",
-		"원거리 공격 피해를 두 배로, 근거리 공격 피해를 1/3로 받을 수 있습니다.",
-		"철괴를 우클릭하면 각각의 피해 정도를 뒤바꿉니다.",
-		"철괴를 좌클릭하면 현재 상태를 확인할 수 있습니다."
+@AbilityManifest(name = "Energy blocker", rank = Rank.A, species = Species.HUMAN, explain = {
+		"Choose to take ranged damage reduced to one-third and take doubled melee damage,",
+		"or take melee damage reduced to one-third and take doubled ranged damage.",
+		"Right-click iron ingot to change reducing damage type.",
+		"Left-click iron ingot to see current status."
 })
 public class EnergyBlocker extends AbilityBase implements ActiveHandler {
 
