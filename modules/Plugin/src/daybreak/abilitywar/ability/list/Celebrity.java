@@ -33,10 +33,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-@AbilityManifest(name = "유명 인사", rank = Rank.C, species = Species.HUMAN, explain = {
-		"철괴를 우클릭하면 레드 카펫이 천천히 앞으로 나아가며 깔립니다. $[CooldownConfig]",
-		"능력으로 인해 깔린 레드 카펫 위에 있을 때 주변 $[DistanceConfig]칸 이내의 모든 생명체가",
-		"자신을 바라보며, 깔린 레드 카펫은 $[DurationConfig]초 후 사라집니다."
+@AbilityManifest(name = "Celebrity", rank = Rank.C, species = Species.HUMAN, explain = {
+		"Summons a red carpet which rolls front when right-click iron ignot. $[CooldownConfig]",
+		"When standing on a red carpet,all entities within $[DistanceConfig]blocks",
+		"will look at Celebrity, red carpet will disappear after $[DurationConfig]seconds."
 })
 public class Celebrity extends AbilityBase implements ActiveHandler {
 
