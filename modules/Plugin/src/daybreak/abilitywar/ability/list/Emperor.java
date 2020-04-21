@@ -32,9 +32,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-@AbilityManifest(name = "황제", rank = Rank.A, species = Species.HUMAN, explain = {
-		"철괴를 우클릭하면 앞으로 돌진하는 방패 부대를 내보내",
-		"앞에 있는 모든 생명체와 물체를 밀쳐냅니다. $[CooldownConfig]"
+@AbilityManifest(name = "Emperor", rank = Rank.A, species = Species.HUMAN, explain = {
+		"Summons a charging shielded armies when right-click iron ingot,",
+		"Pushing all entities. $[CooldownConfig]"
 })
 public class Emperor extends AbilityBase implements ActiveHandler {
 
