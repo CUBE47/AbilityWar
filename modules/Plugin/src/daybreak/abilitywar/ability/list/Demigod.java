@@ -17,8 +17,8 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
 import java.util.Random;
 
-@AbilityManifest(name = "데미갓", rank = Rank.S, species = Species.DEMIGOD, explain = {
-		"공격을 받으면 $[ChanceConfig]% 확률로 5초간 임의의 버프가 적용됩니다."
+@AbilityManifest(name = "Demigod", rank = Rank.S, species = Species.DEMIGOD, explain = {
+		"By $[ChanceConfig]%, gets a random buff for 5 seconds when damaged."
 })
 public class Demigod extends AbilityBase {
 
