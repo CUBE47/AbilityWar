@@ -17,9 +17,7 @@ import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 
 @AbilityManifest(name = "Fast regeneration", rank = Rank.A, species = Species.HUMAN, explain = {
-		"철괴를 우클릭하면 빠른 회복 능력을 사용합니다. $[CooldownConfig]",
-		"능력 사용 중 체력을 빠르게 회복하며, 체력이 적을 수록",
-		"더 빠른 속도로 회복합니다."
+			"Right-click Iron ingot to regenerate health. $[CooldownConfig]",
 })
 public class FastRegeneration extends AbilityBase implements ActiveHandler {
 
