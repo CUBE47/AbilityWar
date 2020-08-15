@@ -20,10 +20,10 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 
-@AbilityManifest(name = "깃털", rank = Rank.A, species = Species.OTHERS, explain = {
-		"철괴를 우클릭하면 $[DurationConfig]초간 §b비행§f할 수 있습니다. $[CooldownConfig]",
-		"§b비행 §f중 웅크리면 바라보는 방향으로 돌진합니다.",
-		"낙하 대미지를 무시합니다."
+@AbilityManifest(name = "Feather", rank = Rank.A, species = Species.OTHERS, explain = {
+		"Fly for $[DurationConfig]seconds when §right-click§fIron ingot. $[CooldownConfig]",
+		"§bShitt §fwhile flying to charge to where you are looking at.",
+		"Ignore falling damage."
 })
 public class Feather extends AbilityBase implements ActiveHandler {
 
