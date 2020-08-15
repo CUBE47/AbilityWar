@@ -14,8 +14,8 @@ import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 
 import java.util.Random;
 
-@AbilityManifest(name = "이열치열", rank = Rank.B, species = Species.HUMAN, explain = {
-		"§c화염 §f대미지를 받을 때, $[ChanceConfig]% 확률로 대미지만큼 체력을 회복합니다."
+@AbilityManifest(name = "FightFireWithFire", rank = Rank.B, species = Species.HUMAN, explain = {
+		"§cWhen damaged §fby flame, $[ChanceConfig]% heal yourself."
 })
 public class FireFightWithFire extends AbilityBase {
 
